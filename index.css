@@ -5,6 +5,7 @@
 
 body {
     background: #fff;
+    user-select: none;
 }
 
 main {
@@ -109,10 +110,27 @@ ul.descriptionLinks {
 
 
 
+.bottomnav {
+    margin: 50px 325px 0 325px; 
+}
 
+.bottomnavgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #616161;
+    text-decoration: none;
+}
 
+.legalNoticeGroup {
+    display: flex;
+    flex-direction: row;
+}
 
-
+.bottomnavLinkGroup {
+    display: flex;
+    flex-direction: row;
+}
 
 footer {
     display: flex;
