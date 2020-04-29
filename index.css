@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+}
+
+main {
+    margin: 0 325px 0 325px; 
+}
+
+nav {
+    background: #ffffff;
+    margin-bottom: 50px;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navlinks{
+    padding: 15px;
+    color: #616161;
+    font-size: 20px;
+    
+}
+
+.navlinks a {
+    text-decoration: none; 
+}
+
+ul.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.gifContainer {
+    display: flex;
+
+}
+
+.headerGIF {
+    width: auto;
+    height: 400px;;
+}
+
+
+
+.description h1 {
+    color: #45425B;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 68px;
+    margin-bottom: 50px;
+}
+
+.description h2 {
+    max-width: 500px;
+    color: #616161;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.description a {
+    color: #616161;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.description p {
+    color: #616161;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+}
+
+ul.descriptionLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+
