@@ -118,3 +118,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.footerIMGBG {
+    width: 100%;
+}
