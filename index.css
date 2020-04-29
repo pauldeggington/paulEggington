@@ -132,6 +132,10 @@ ul.descriptionLinks {
     flex-direction: row;
 }
 
+.bottomnavLinks {
+    margin: 0 5px 0 5px;
+}
+
 footer {
     display: flex;
     justify-content: center;
