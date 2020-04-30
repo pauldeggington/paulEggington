@@ -212,3 +212,27 @@ footer {
 .footerIMGBG {
     width: 100%;
 }
+
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    ul.nav {
+        justify-content: center;
+    }
+
+    .description {
+        flex-basis: auto;
+    }
+
+    .divider {
+        width: 100%;
+    }
+}
