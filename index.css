@@ -30,12 +30,20 @@ a {
     padding: 15px;
     color: #616161;
     font-size: 20px;
-    
 }
 
 .navlinks a {
     text-decoration: none; 
 }
+
+.navlinks a:visited {
+    color: #616161;
+}
+
+.navlinks a:hover {
+    color: #45425B;
+}
+
 
 ul.nav {
     display: flex;
@@ -61,12 +69,28 @@ ul.nav {
 
 }
 
-.headerGIF {
-    width: auto;
-    height: 420px;;
+.headerIMGBG {
+    width: 100%;
+    transform: rotate(180deg);
 }
 
+.headerGIF {
+    width: auto;
+    height: 420px;
+}
 
+.dividerGroup {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px 0 0 0; 
+}
+
+.divider { 
+    width: 80%;
+    height: 4px;
+    background-color: #45425B;
+}
 
 .description h1 {
     color: #45425B;
@@ -109,6 +133,36 @@ ul.descriptionLinks {
 
 
 
+.descriptionLinks li a:visited {
+    color: #616161;
+}
+
+.descriptionLinks li a:hover {
+    color: #45425B;
+
+}
+
+h2.contact {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 0 0 0;
+    color: #45425B;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+    text-decoration: none;
+}
+
+h3.contactMe {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    color: #45425B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+    text-decoration: none;
+}
 
 .bottomnav {
     margin: 50px 325px 0 325px; 
