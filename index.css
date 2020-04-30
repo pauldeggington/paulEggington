@@ -210,7 +210,27 @@ footer {
 }
 
 .footerIMGBG {
+    z-index: 1;
     width: 100%;
+    position: relative;
+}
+
+.footerIMG {
+    position: relative;
+}
+
+.footerIMG a {
+    z-index: 999;
+    position: relative;
+    
+}
+
+.buymeacoffeeBTN {
+    width: auto;
+    height: 28px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 
