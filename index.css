@@ -260,11 +260,7 @@ footer {
         justify-content: space-between;
     }
 
-    ul.nav {
-        justify-content: center;
-    }
-
-    .description {
+        .description {
         flex-basis: auto;
     }
 
@@ -282,6 +278,10 @@ footer {
 
     .descriptionLinks li {
         margin: 0 0 50px 0;
+    }
+
+    ul.nav {
+        display: none;
     }
 
     .bottomnav {
