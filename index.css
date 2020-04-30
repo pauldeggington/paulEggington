@@ -289,7 +289,24 @@ footer {
         margin: 50px 100px 50px 100px;
     }
 
+    .descriptionLinks {
+        justify-content: center;
+    }
+
     .description h1 {
+        text-align: center;
+    }
+
+    .description h2 {
+        text-align: center;
+    }
+
+    h2.contact {
+        text-align: center;
+        justify-content: center;
+    }
+
+    h3.contactMe {
         text-align: center;
     }
 
@@ -311,6 +328,6 @@ footer {
 
 @media only screen and (max-width: 420px) {
     .headerGIF {
-        display: none;
+        height: 200px;
     }
 }
