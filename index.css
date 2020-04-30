@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    margin: 0 325px 0 325px; 
+    margin: 0 325px 0 325px;
 }
 
 nav {
@@ -26,14 +26,14 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.navlinks{
+.navlinks {
     padding: 15px;
     color: #616161;
     font-size: 20px;
 }
 
 .navlinks a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .navlinks a:visited {
@@ -83,10 +83,10 @@ ul.nav {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 50px 0 0 0; 
+    margin: 50px 0 0 0;
 }
 
-.divider { 
+.divider {
     width: 80%;
     height: 4px;
     background-color: #45425B;
@@ -165,7 +165,7 @@ h3.contactMe {
 }
 
 .bottomnav {
-    margin: 50px 325px 0 325px; 
+    margin: 50px 325px 0 325px;
 }
 
 .bottomnavgroup {
@@ -188,6 +188,19 @@ h3.contactMe {
 
 .bottomnavLinks {
     margin: 0 5px 0 5px;
+}
+
+.bottomnavLinks a:link {
+    text-decoration: none;
+    color: #616161;
+}
+
+.bottomnavLinks a:visited {
+    color: #616161;
+}
+
+.bottomnavLinks a:hover {
+    color: #45425B;
 }
 
 footer {
