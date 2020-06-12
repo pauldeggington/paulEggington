@@ -22,29 +22,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        $(function () {
-            new WOW().init();
-        });
-        $(window).on('load', function () {
-
-            new WOW().init();
-        });
-    </script>
+    
 </head>
 
 <body>
     <img class="headerIMGBG" src="headerIMG.png" alt="header">
     <main>
         <nav>
-            <ul class="nav">
+            <ul class="nav ">
                 <!--<li class="navLinks"><a href="#">portfolio</a></li>-->
                 <li class="navLinks"><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <div class="header">
-            <div class="description">
+            <div class="description wow fadeIn" data-wow-duration="2s">
                 <h1>Paul Eggington</h1>
                 <h2>Dedicated to helping you achieve your web design needs
                     that support your business and drive sales
@@ -116,5 +107,15 @@
 
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        $(function () {
+            new WOW().init();
+        });
+        $(window).on('load', function (z) {
+
+            new WOW().init();
+        });
+    </script>
 
 </html>
