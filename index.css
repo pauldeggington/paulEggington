@@ -24,6 +24,7 @@ ul {
 
 a {
     font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
 }
 
 .navlinks {
@@ -143,7 +144,23 @@ ul.descriptionLinks {
 
 }
 
-h2.contact {
+img.portfolioIMG {
+    display: block;
+    margin: 30px auto 30px auto;
+    width: 250px;
+    height: auto;
+}
+
+img.portfolioIMG2 {
+    display: block;
+    margin: 30px auto 30px auto;
+    width: 600px;
+    height: auto;
+}
+
+
+
+h2.mainHeaders {
     display: flex;
     justify-content: flex-start;
     margin: 50px 0 0 0;
@@ -154,7 +171,7 @@ h2.contact {
     text-decoration: none;
 }
 
-h3.contactMe {
+h3.secondaryHeaders {
     display: flex;
     justify-content: center;
     margin: 50px 0 0 0;
@@ -162,6 +179,17 @@ h3.contactMe {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-size: 34px;
+    text-decoration: none;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    color: #45425B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -222,7 +250,7 @@ footer {
 .footerIMG a {
     z-index: 999;
     position: relative;
-    
+
 }
 
 .buymeacoffeeBTN {
@@ -280,7 +308,7 @@ footer {
         justify-content: space-between;
     }
 
-        .description {
+    .description {
         flex-basis: auto;
     }
 
@@ -346,8 +374,11 @@ footer {
 
 }
 
+@media only screen and (max-width: 800px) {}
+
 @media only screen and (max-width: 420px) {
     .headerGIF {
         height: 200px;
     }
+
 }
