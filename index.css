@@ -180,6 +180,7 @@ h3.secondaryHeaders {
     font-weight: normal;
     font-size: 34px;
     text-decoration: none;
+    text-align: center;
 }
 
 h5 {
@@ -191,6 +192,7 @@ h5 {
     font-weight: normal;
     font-size: 22px;
     text-decoration: none;
+    text-align: center;
 }
 
 .bottomnav {
@@ -374,7 +376,12 @@ footer {
 
 }
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+    h2.mainHeaders {
+        justify-content: center;
+    }
+
+}
 
 @media only screen and (max-width: 420px) {
     .headerGIF {
