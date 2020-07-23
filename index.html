@@ -22,6 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </head>
 
@@ -29,19 +33,19 @@
     <img class="headerIMGBG" src="headerIMG.png" alt="header">
     <main>
         <nav>
-            <ul class="nav ">
+            <ul class="nav">
                 <li class="navLinks"><a href="#portfolio">portfolio</a></li>
                 <li class="navLinks"><a href="#contact">contact</a></li>
             </ul>
         </nav>
-        <div class="header">
-            <div class="description wow fadeIn" data-wow-duration="2s">
+        <div class="header wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+            <div class="description">
                 <h1>Paul Eggington</h1>
                 <h2>Dedicated to helping you achieve your web design needs
                     that support your business and drive sales
                 </h2>
                 <ul class="descriptionLinks">
-                    <li><a href="https://github.com/uhhstockfish" target="_blank">Github</a></li>
+                    <li><a href="https://github.com/pauldeggington" target="_blank">Github</a></li>
                     <p> - </p>
                     <!--<li><a href="https://dribbble.com/pdeggington" target="_blank">Dribble</a></li>
                     <p> - </p>-->
@@ -83,24 +87,6 @@
     <footer>
         <div class="typeform-widget" data-url="https://pauleggington.typeform.com/to/KM0GhT" data-transparency="100"
             data-hide-headers=true data-hide-footer=true style="width: 50%; height: 350px;"></div>
-        <script>
-            (function () {
-                var qs, js, q, s, d = document,
-                    gi = d.getElementById,
-                    ce = d.createElement,
-                    gt = d.getElementsByTagName,
-                    id = "typef_orm",
-                    b = "https://embed.typeform.com/";
-                if (!gi.call(d, id)) {
-                    js = ce.call(d, "script");
-                    js.id = id;
-                    js.src = b + "embed.js";
-                    q = gt.call(d, "script")[0];
-                    q.parentNode.insertBefore(js, q)
-                }
-            })()
-        </script>
-
     </footer>
     <nav class="bottomnav">
         <ul class="bottomnavgroup">
@@ -110,7 +96,7 @@
                 <li class="bottomnavLinks"><a href="legal.html">LEGAL NOTICE</a></li>
             </div>
             <div class="bottomnavLinkGroup">
-                <li class="bottomnavLinks"><a href="https://github.com/uhhstockfish" target="_blank">Github</a></li>
+                <li class="bottomnavLinks"><a href="https://github.com/pauldeggington" target="_blank">Github</a></li>
                 <!--<li class="bottomnavLinks"><a href="https://dribbble.com/pdeggington" target="_blank">dribble</a></li>-->
                 <li class="bottomnavLinks"><a href="https://www.linkedin.com/in/pauleggingtonjr/"
                         target="_blank">Linkedin</a></li>
@@ -119,21 +105,26 @@
         </ul>
     </nav>
     <div class="footerIMG">
-        <a href="https://www.buymeacoffee.com/pdeggington" target="_blank"><img title="Buy me a Coffee"
-                class="buymeacoffeeBTN" src="buymeacoffeebtn.png" alt="Buy me a Coffee"></a>
         <img class="footerIMGBG" src="footerIMG.png" alt="footer">
-
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    $(function () {
-        new WOW().init();
-    });
-    $(window).on('load', function (z) {
 
-        new WOW().init();
-    });
+<script>
+    (function () {
+        var qs, js, q, s, d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+        if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q)
+        }
+    })()
 </script>
 
 </html>
