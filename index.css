@@ -263,6 +263,22 @@ footer {
     left: 20px;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(215, 215, 215);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(125, 125, 125);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(100, 100, 100);
+}
 
 @media only screen and (max-width: 800px) {
     main {
