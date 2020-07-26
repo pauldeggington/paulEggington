@@ -3,23 +3,41 @@
     margin: 0;
 }
 
+.noScroll {
+    overflow: hidden;
+    
+}
+
+.menuOpen {
+    display: flex;
+}
+
 body {
     background: #fff;
     user-select: none;
 }
 
 main {
-    margin: 0 325px 0 325px;
+    margin: 0 0 0 0;
 }
 
+
+
 nav {
+    display: flex;
+    justify-content: space-between;
     background: #ffffff;
-    margin-bottom: 50px;
+    margin: 10px 0 10px 0;
+    flex-wrap: wrap;
 }
 
 ul {
     text-decoration: none;
     list-style: none;
+}
+
+h1, h2, h3, p {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -29,28 +47,39 @@ a {
 
 .navlinks {
     padding: 15px;
-    color: #616161;
+    color: #111;
     font-size: 20px;
+    line-height: 40px;
 }
+
 
 .navlinks a {
     text-decoration: none;
-    color: #616161;
+    color: #111;
 }
 
 .navlinks a:visited {
-    color: #616161;
+    color: #111;
 }
 
 .navlinks a:hover {
-    color: #45425B;
+    color: #111;
 }
 
 
-ul.nav {
+ul.nav-right {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-left {
+    padding: 0 0 0 5vw;
+}
+
+.nav-right {
+    padding: 0 5vw 0 0;
 }
 
 .header {
@@ -60,15 +89,33 @@ ul.nav {
     flex-wrap: wrap;
 }
 
-.description {
+.portfolioContainer {
     display: flex;
-    flex-basis: 50%;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.gifContainer {
+.portfolioRow {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.thumbnailContainer {
+    width: 25%;
+    height: 25vw;
+    background-color: white;
+}
+
+.thumbnailContainer:hover {
+    
+}
+
+.portfolioIMG {
+    width: 100%;
+    height: 100%;
 }
 
 .headerIMGBG {
@@ -76,10 +123,6 @@ ul.nav {
     transform: rotate(180deg);
 }
 
-.headerGIF {
-    width: auto;
-    height: 420px;
-}
 
 .dividerGroup {
     display: flex;
@@ -91,7 +134,7 @@ ul.nav {
 .divider {
     width: 80%;
     height: 4px;
-    background-color: #616161;
+    background-color: #111;
 }
 
 .description h1 {
@@ -144,183 +187,91 @@ ul.descriptionLinks {
 
 }
 
-img.portfolioIMG {
-    display: block;
-    margin: 30px auto 30px auto;
-    width: 250px;
-    height: auto;
-}
-
-img.portfolioIMG2 {
-    display: block;
-    margin: 30px auto 30px auto;
-    width: 600px;
-    height: auto;
-}
 
 
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
 
-h2.mainHeaders {
-    display: flex;
-    justify-content: flex-start;
-    margin: 50px 0 0 0;
-    color: #45425B;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 52px;
-    text-decoration: none;
-}
-
-h3.secondaryHeaders {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0 0 0;
-    color: #45425B;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
-    font-size: 34px;
-    text-decoration: none;
-    text-align: center;
-}
-
-h5 {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0 0 0;
-    color: #45425B;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
-    font-size: 22px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.bottomnav {
-    margin: 50px 325px 0 325px;
-}
-
-.bottomnavgroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #616161;
-    text-decoration: none;
-}
-
-.legalNoticeGroup {
-    display: flex;
-    flex-direction: row;
-}
-
-.bottomnavLinkGroup {
-    display: flex;
-    flex-direction: row;
-}
-
-.bottomnavLinks {
-    margin: 0 5px 0 5px;
-}
-
-.bottomnavLinks a:link {
-    text-decoration: none;
-    color: #616161;
-}
-
-.bottomnavLinks a:visited {
-    color: #616161;
-}
-
-.bottomnavLinks a:hover {
-    color: #45425B;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-.footerIMGBG {
-    z-index: 1;
-    width: 100%;
-    position: relative;
-}
-
-.footerIMG {
-    position: relative;
-}
-
-.footerIMG a {
-    z-index: 999;
-    position: relative;
-
-}
-
-.buymeacoffeeBTN {
-    width: auto;
-    height: 28px;
+.craftsmanContainer {
+    display: none;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    right: 0;
+    overflow: auto;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 45vw;
+    text-align: left;
+    z-index: 99;
 }
+
+.portfolioContent {
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+}
+
+.portfolioContent img {
+    margin: 30px 0 30px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.portfolioContent iframe {
+    margin: 30px 0 30px;
+    justify-content: center;
+}
+
+.portfolioContent .portfolioDescription {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.portfolioContent .portfolioDescriptionCopy {
+    width: 60%;
+
+}
+
+.portfolioContent .projectDetails {
+    width: 40%;
+}
+
+.menuOpen {
+    display: flex;
+}
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-	width: 15px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-	background: rgb(215, 215, 215);
+    background: rgb(215, 215, 215);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgb(125, 125, 125);
+    background: rgb(125, 125, 125);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(100, 100, 100);
+    background: rgb(100, 100, 100);
 }
 
-@media only screen and (max-width: 800px) {
-    main {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
 
-    .header {
-        justify-content: center;
-    }
-
-    ul.nav {
-        justify-content: center;
-    }
-
-    .description {
-        flex-basis: auto;
-    }
-
-    .description h1 {
-        font-size: 56px;
-    }
-
-    .description h2 {
-        font-size: 30px;
-    }
-
-    .divider {
-        width: 100%;
-    }
-
-    .headerGIF {
-        height: 300px;
-
-    }
-}
 
 @media only screen and (max-width: 1800px) {
-    main {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 
     .header {
         justify-content: space-between;
@@ -352,49 +303,65 @@ footer {
 
     .bottomnav {
         justify-content: center;
-        margin: 50px 100px 50px 100px;
+        margin: 50px 0 50px 0;
     }
 
     .descriptionLinks {
         justify-content: center;
     }
 
-    .description h1 {
-        text-align: center;
+
+    .thumbnailContainer {
+        width: 50%;
+        height: 50vw;
     }
 
-    .description h2 {
-        text-align: center;
+    .craftsmanContainer {
+        width: 70vw;
     }
-
-    h2.contact {
-        text-align: center;
-        justify-content: center;
-    }
-
-    h3.contactMe {
-        text-align: center;
-    }
-
-    .bottomnavgroup {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .legalNoticeGroup {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .bottomnavLinkGroup {
-        flex-direction: column;
-    }
-
 }
 
+
 @media only screen and (max-width: 800px) {
+
+    nav {
+        justify-content: center;
+    }
+
+    ul.nav-right, ul.nav-left {
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    ul.nav {
+        justify-content: center;
+    }
+
+
+    .thumbnailContainer {
+        width: 50%;
+        height: 50vw;
+    }
+
+    .craftsmanContainer {
+        width: 100vw;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
     h2.mainHeaders {
         justify-content: center;
+    }
+
+    .thumbnailContainer {
+        width: 100%;
+        height: 100vw;
     }
 
 }
