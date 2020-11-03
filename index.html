@@ -30,123 +30,21 @@
 </head>
 
 <body>
-    <!-- Portfolio Pages -->
-
-    <!-- Craftsman Republic -->
-
-    <div class="craftsmanContainer">
-        <div class="portfolioContent">
-            <h1>
-                Craftsman Republic
-            </h1>
-            <div class="portfolioDescription">
-                <p class="portfolioDescriptionCopy">
-                    I recently had the privilege of working with California based Managment Consulting firm, Craftsman Republic. From a new
-                    logo
-                    mark to a new colour palette, typography, graphic design, illustration, messaging, website, we did
-                    it
-                    all. After more than ten years in the business, Craftsman Republic has a huge reputation. The rebrand was
-                    created to better convey the brotherhood one is taken under when joining the backbone to our economy.
-                </p>
-                <div class="projectDetails">
-                    <p>
-                        Date: October
-                    </p>
-                    <p>
-                        Client: Craftsman Republic
-                    </p>
-                    <p>
-                        Role: Graphic Designer
-                    </p>
-                    <p>
-                        URL: craftsmanrepublic.com
-                    </p>
-                </div>
-            </div>
-            <img src="crFullLogo.png">
-            <img src="crIndexIMG.png">
-            <img src="crHowItWorksIMG.png">
-            <img src="crAboutIMG.png">
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/sx5eaKTLLLI" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/wT9w2-HKE5Y" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <!-- Essential Health Info -->
-
-    <!-- Outbrain -->
-
-    <!-- FinanceDoneRight -->
     <main id="mainContent">
-        <nav>
-            <ul class="nav-left">
-                <li class="navLinks"><a href="http://www.pauleggington.com" style="font-weight: bold; font-size: 35px; color: #111;"
-                        id="name">Paul Eggington</a></li>
-            </ul>
-            <ul class="nav-right">
-                <li class="navLinks"><a href="https://www.linkedin.com/in/pauleggingtonjr/" target="_blank">linkedin</a>
-                </li>
-                <li class="navLinks"><a href="#about">about</a></li>
-            </ul>
-
-        </nav>
-        <div class="portfolioContainer">
-            <div class="portfolioRow">
-                <a href="#" class="thumbnailContainer" onclick="nav.menu()">
-                    <img src="crFullLogo.png" class="portfolioIMG">
-                </a>
-                <a href="#" class="thumbnailContainer">
-                    <img src="ehiFullLogo.png" class="portfolioIMG">
-                </a>
-                <a href="#" class="thumbnailContainer">
-                    <img src="reserveTechFullLogo.png" class="portfolioIMG">
-                </a>
-                <a href="#" class="thumbnailContainer">
-                    <img src="seniorBeginningsFullLogo.png" class="portfolioIMG">
-                </a>
-            </div>
-            <!--<div class="portfolioRow">
-                <a href="#" class="thumbnailContainer">
-                    <img src="ibottaLogo.png" class="portfolioIMG">
-                </a>
-                <a href="#" class="thumbnailContainer">
-                    <img src="instacartLogo.png" class="portfolioIMG">
-                </a>
-                <a href="#" class="thumbnailContainer">
-                    <img src="postmatesLogo.gif" class="portfolioIMG">
-                </a>
-
-            </div>-->
+        <h1 class="headerName">Paul Eggington</h1>
+        <div class="portfolioLinks">
+            <a href="http://www.linkedin.com/in/pauldeggington">Linkedin</a>
+            <a href="https://my.indeed.com/p/paule-k2evfoo">Indeed</a>
+            <a href="">Portfolio</a>
+        </div>
+        <h2 class="websiteName">Websites I have contributed to</h2>
+        <div class="websiteLinks">
+            <a href="http://www.essentialhealthinfo.com">EssentialHealthInfo</a>
+            <a href="https://www.acquirecrowd.com">Acquirecrowd</a>
+            <a href="https://www.craftsmanrepublic.com">Craftsman Republic</a>
+        </div>
     </main>
 </body>
 
-
-
-<script>
-    // Right Side Menu Open Script
-    nav = {
-        status: true,
-        menu: function () {
-            console.log(nav.status)
-            if (nav.status) {
-                // here put class when menu is open - eg:
-                document.querySelector(".craftsmanContainer").classList.add("menuOpen");
-                document.querySelector("body").classList.add("noScroll");
-
-                nav.status = false;
-            } else {
-                // here put class when menu is closed - eg:
-                document.querySelector(".craftsmanContainer").classList.remove("menuOpen");
-                document.querySelector("body").classList.remove("noScroll");
-
-                nav.status = true;
-            }
-        }
-    }
-</script>
 
 </html>
