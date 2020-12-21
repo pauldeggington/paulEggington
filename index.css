@@ -43,28 +43,8 @@ ul {
 }
 
 .typeform-share {
-    display: inline-block;
-    text-decoration: none;
-    
     border: 4px solid #303984;
     color: #fff;
-    cursor: pointer;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 14px;
-    line-height: 38px;
-    text-align: center;
-    margin: 0;
-    height: 45px;
-    padding: 0px 33px;
-    border-radius: 25px;
-    max-width: 100%;
-    letter-spacing: 3px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     transition: all 0.5s;
 }
 
