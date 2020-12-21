@@ -1,4 +1,4 @@
-* {
+html {
   padding: 0;
   margin: 0;
 }
@@ -60,6 +60,11 @@ ul {
 
   .typeform-share {
     background-color: #303984;
+  }
+
+  .whiteLinks, .whiteSVGLinks {
+    color: #fff;
+    fill: #fff;
   }
 }
 
