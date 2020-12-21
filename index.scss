@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('maksym-zakharyak-6VBRu8jR8to-unsplash.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+    color: #fff;
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.whiteLinks {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.whiteSVGLinks {
+    fill: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+        fill: rgba(255, 255, 255, 1);
+    }
+}
+
+.typeform-share {
+    background-color:rgba(255,255,255,0);
+    transition: all 0.5s;
+    &:hover {
+        color: #fff;
+        background-color: #303984;
+    }
+}
+
+.mainContent {
+    width: 65%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        width: 95%;
+    }
+
+    .typeform-share {
+        background-color: #303984;
+    }
+}
