@@ -26,6 +26,7 @@ ul {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: all 0.5s;
+
     &:hover {
         color: rgba(255, 255, 255, 1);
     }
@@ -35,17 +36,9 @@ ul {
     fill: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: all 0.5s;
+
     &:hover {
         fill: rgba(255, 255, 255, 1);
-    }
-}
-
-.typeform-share {
-    background-color:rgba(255,255,255,0);
-    transition: all 0.5s;
-    &:hover {
-        color: #fff;
-        background-color: #303984;
     }
 }
 
@@ -53,18 +46,39 @@ ul {
     margin: 5px 10px 5px 0;
     color: #fff;
     border: 3px solid #fff;
-    background-color:rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 75px;
     padding: 7px 20px;
     text-decoration: none;
     word-wrap: normal;
     transition: all 0.5s;
+
     &:hover {
         color: #000;
         background-color: #fff;
     }
 }
 
+.contactButtons a {
+    margin: 5px 10px 5px 0;
+    color: #fff;
+    border: 3px solid #303984;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 75px;
+    padding: 7px 20px;
+    text-decoration: none;
+    word-wrap: normal;
+    transition: all 0.5s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+        background-color: #303984;
+    }
+}
 
 .mainContent {
     width: 65%;
@@ -76,16 +90,18 @@ ul {
         width: 95%;
     }
 
-    .typeform-share {
-        background-color: #303984;
-    }
-
     .siteButtons a {
         background-color: #fff;
         color: #000;
     }
 
-    .whiteLinks, .whiteSVGLinks {
+    .contactButtons a {
+        background-color: #303984;
+        color: #fff;
+    }
+
+    .whiteLinks,
+    .whiteSVGLinks {
         color: #fff;
         fill: #fff;
     }

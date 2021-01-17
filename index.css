@@ -40,15 +40,6 @@ ul {
   fill: white;
 }
 
-.typeform-share {
-  background-color: rgba(255, 255, 255, 0);
-  transition: all 0.5s;
-}
-.typeform-share:hover {
-  color: #fff;
-  background-color: #303984;
-}
-
 .siteButtons a {
   margin: 5px 10px 5px 0;
   color: #fff;
@@ -65,6 +56,26 @@ ul {
   background-color: #fff;
 }
 
+.contactButtons a {
+  margin: 5px 10px 5px 0;
+  color: #fff;
+  border: 3px solid #303984;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 75px;
+  padding: 7px 20px;
+  text-decoration: none;
+  word-wrap: normal;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  text-decoration: none;
+}
+.contactButtons a:hover {
+  color: #fff;
+  background-color: #303984;
+}
+
 .mainContent {
   width: 65%;
 }
@@ -74,16 +85,18 @@ ul {
     width: 95%;
   }
 
-  .typeform-share {
-    background-color: #303984;
-  }
-
   .siteButtons a {
     background-color: #fff;
     color: #000;
   }
 
-  .whiteLinks, .whiteSVGLinks {
+  .contactButtons a {
+    background-color: #303984;
+    color: #fff;
+  }
+
+  .whiteLinks,
+.whiteSVGLinks {
     color: #fff;
     fill: #fff;
   }
