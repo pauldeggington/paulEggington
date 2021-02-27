@@ -86,6 +86,11 @@ html {
       width: 100%;
       height: auto;
   }
+
+  .gallery-thumbnail img {
+    max-width: 30%;
+    height: auto;
+  }
   
   @media screen and (max-width: 768px) {
     .mainContent {
@@ -110,6 +115,13 @@ html {
 
     .gallery img {
         width: 100%;
+        height: auto;
+    }
+
+    .gallery-thumbnail img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
   }
   
