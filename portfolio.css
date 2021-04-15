@@ -90,11 +90,7 @@ a {
 
 /* Gallery */
 
-.gallery {
-  align-items: flex-start;
-}
-
-.gallery-thumbnail {
+.gallery, .gallery-thumbnail {
   align-items: flex-start;
 }
 
