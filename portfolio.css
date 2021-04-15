@@ -90,6 +90,14 @@ a {
 
 /* Gallery */
 
+.gallery {
+  align-items: flex-start;
+}
+
+.gallery-thumbnail {
+  align-items: flex-start;
+}
+
 .gallery img {
   width: 100%;
   height: auto;
