@@ -117,11 +117,6 @@ html {
       fill: #fff;
     }
 
-    .gallery img {
-        width: 100%;
-        height: auto;
-    }
-
     .gallery-thumbnail img {
         max-width: 100%;
         width: 100%;
