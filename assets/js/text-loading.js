@@ -146,6 +146,6 @@ const HyperText = el => {
   });
 }
 
-let text = document.querySelector('.text');
+let text = document.querySelector('.text', '.text-test');
 
 HyperText(text);
