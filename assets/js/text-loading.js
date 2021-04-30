@@ -1,4 +1,4 @@
-const hypertext = (function() {
+/*const hypertext = (function() {
     function countLines(elem) {
         let lineHeight = window.getComputedStyle(elem, null).getPropertyValue('line-height');
 
@@ -193,4 +193,4 @@ const hypertext = (function() {
 
 hypertext.init({
     'selector': '.hypertext'
-});
+});*/
