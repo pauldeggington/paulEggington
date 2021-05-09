@@ -17,9 +17,17 @@ h5,
 h6,
 p,
 li,
-ul {
+ul,
+a {
   color: #fff;
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'proxima-nova', sans-serif;
+  font-display: swap;
+}
+
+p, a{
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 1.4em;
 }
 
 a {
@@ -90,7 +98,8 @@ a {
 
 /* Gallery */
 
-.gallery, .gallery-thumbnail {
+.gallery,
+.gallery-thumbnail {
   align-items: flex-start;
 }
 
